@@ -1,0 +1,86 @@
+# ═══════════════════════════════════════════
+#           ZorvynDragon Configuration
+# ═══════════════════════════════════════════
+
+world:
+  # The name of your End world
+  end-world-name: "world_the_end"
+
+spawn:
+  # Automatically spawn dragon when a player enters the End
+  trigger-on-enter: true
+
+  # How many seconds to wait after the first player enters
+  # before spawning, to allow others to join the fight
+  group-wait-seconds: 5
+
+  # Only trigger once per player per session (resets when they leave the End)
+  only-first-entry-per-session: true
+
+  # Reset a player's trigger when they leave the End
+  # (allows them to trigger again next time they enter)
+  reset-trigger-on-leave: true
+
+  # Respawn end crystals/towers as part of the ritual
+  # Set to false to skip the crystal respawn animation
+  respawn-crystals: true
+
+  # Automatically respawn the dragon X minutes after it's killed
+  # Set to 0 to disable auto-respawn
+  auto-reset-minutes: 0
+
+dragon:
+  # Max health of the dragon (vanilla default: 200.0)
+  max-health: 200.0
+
+  # Drop a dragon egg when the dragon is killed
+  drop-egg: true
+
+  # Drop the egg at the exit portal (0, 65, 0) instead of at the dragon's death location
+  egg-drop-at-exit-portal: true
+
+  # How many ticks after death to drop the egg (allows portal to generate first)
+  egg-drop-delay-ticks: 40
+
+  # Drop vanilla XP on death
+  drop-vanilla-xp: true
+
+  # Override XP amount (-1 = use vanilla amount)
+  custom-xp: -1
+
+broadcast:
+  # Broadcast when dragon spawns / dies
+  on-spawn: true
+  on-death: true
+
+  # Where to broadcast: "server" = all players, "end" = only End players
+  scope: "server"
+
+rewards:
+  # Drop extra items when dragon dies (at its death location)
+  enabled: false
+  items:
+    - DIAMOND
+    - ELYTRA
+    - NETHER_STAR
+
+messages:
+  # General
+  no-permission: "&cYou don't have permission to do that."
+  end-world-not-found: "&cCould not find the End world. Check your config."
+  config-reloaded: "&aConfig reloaded!"
+
+  # Dragon state
+  dragon-already-active: "&cThe Ender Dragon is already active!"
+  dragon-spawned: "&5&l✦ &dThe Ender Dragon has awakened! &5&l✦"
+  dragon-defeated: "&5&l✦ &dThe Ender Dragon has been slain! &5&l✦"
+  dragon-spawning-soon: "&dThe Ender Dragon will spawn in &5{seconds} &dseconds..."
+  player-joined-fight: "&d{player} &has joined the dragon fight!"
+  notify-dragon-active: true
+
+  # Admin commands
+  spawn-forced: "&aForce-spawned the Ender Dragon."
+  dragon-killed-admin: "&aRemoved &6{count}&a dragon(s)."
+  dragon-reset: "&aDragon state reset. Next player to enter the End will trigger a spawn."
+  status-active: "&dThe Ender Dragon is &acurrently active&d."
+  status-inactive: "&dThe Ender Dragon is &cnot active&d."

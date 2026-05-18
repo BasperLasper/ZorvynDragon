@@ -1,0 +1,29 @@
+name: ZorvynDragon
+version: 1.0.0
+main: dev.zorvyndragon.ZorvynDragon
+api-version: "26.1"
+description: Automatically respawns the Ender Dragon when players enter the End. Fully configurable.
+author: BasperLasper
+
+commands:
+  zorvyndragon:
+    description: ZorvynDragon admin commands
+    usage: /zorvyndragon <spawn|kill|reset|status|reload>
+    aliases: [zd]
+
+permissions:
+  zorvyndragon.spawn:
+    description: Force spawn the dragon
+    default: op
+  zorvyndragon.kill:
+    description: Force kill the dragon
+    default: op
+  zorvyndragon.reset:
+    description: Reset dragon state
+    default: op
+  zorvyndragon.status:
+    description: Check dragon status
+    default: op
+  zorvyndragon.reload:
+    description: Reload the config
+    default: op
