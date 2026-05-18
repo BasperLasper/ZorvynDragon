@@ -1,5 +1,5 @@
 # ZorvynDragon
-A Paper 26.1.2 plugin by BasperLasper that automatically respawns the Ender Dragon whenever a player enters the End. Supports group fights, configurable health, dragon egg drops, reward items, broadcast control, and full message customisation.
+A Paper 26.1.2 plugin that automatically respawns the Ender Dragon whenever a player enters the End. Supports group fights, configurable health, dragon egg drops, reward items, broadcast control, and full message customisation.
 
 ## Features
 - Automatically spawns the dragon when a player enters the End
@@ -94,8 +94,3 @@ All messages are editable in `config.yml` under `messages:`. Supports `&` color 
 ## Requirements
 - Paper 26.1.2
 - Java 25
-EOF
-
-git add README.md
-git commit -m "Add README for ZorvynDragon v1.0.0"
-git push origin main
