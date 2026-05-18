@@ -1,4 +1,5 @@
 # ZorvynDragon
+Support: 
 A Paper 26.1.2 plugin that automatically respawns the Ender Dragon whenever a player enters the End. Supports group fights, configurable health, dragon egg drops, reward items, broadcast control, and full message customisation.
 
 ## Features
